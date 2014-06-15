@@ -1,0 +1,82 @@
+body {
+    color: #f8f8f8;
+    font-family: "myriad-pro", sans-serif;
+}
+
+.lead {
+    color: #b8b8b8;
+}
+
+a {
+    color: #eecc86;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #eecc86;
+}
+
+header {
+    background: url('/img/header_bg.jpg') 50% 0 no-repeat fixed;
+    padding-bottom: 30px;
+    height: 500px;
+    position: relative;
+}
+
+header h1 {
+    padding-top: 50px;
+}
+
+header .social {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+}
+
+header a {
+    color: #63737F;
+}
+
+header a:hover {
+    color: #eecc86;
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+section h2 {
+    padding-bottom: 30px;
+}
+
+
+.about-me {
+    background-color: #63737f;
+}
+
+.about-me h2 small {
+    color: #b8b8b8;
+}
+
+.projects {
+    color: #585858;
+}
+
+.project {
+    padding-top: 40px;
+}
+
+.project img {
+    border: 2px solid #b8b8b8;
+}
+
+footer {
+    background-color: #63737f;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
