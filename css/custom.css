@@ -1,10 +1,6 @@
 body {
-    color: #f8f8f8;
+    color: #D9D6D2;
     font-family: "myriad-pro", sans-serif;
-}
-
-.lead {
-    color: #f0f0f0;
 }
 
 a {
@@ -24,6 +20,7 @@ header {
 }
 
 header h1 {
+    color: #f0f0f0;
     padding-top: 50px;
 }
 
@@ -37,7 +34,7 @@ header .social {
 }
 
 header a {
-    color: #63737F;
+    color: #566573;
 }
 
 header a:hover {
@@ -56,15 +53,24 @@ section h2 {
 
 
 .about-me {
-    background-color: #63737f;
+    background-color: #394A59;
 }
 
 .about-me h2 small {
     color: #b8b8b8;
 }
 
+.about-me p {
+    margin: 10px 10px;
+}
+
 .projects {
     color: #585858;
+    background-color: #f0f0f0;
+}
+
+.project h3 {
+    color: #566573;
 }
 
 .project {
@@ -72,15 +78,19 @@ section h2 {
 }
 
 .project img {
-    border: 2px solid #b8b8b8;
+    border: 1px solid #77848C;
 }
 
 .project a {
-    color: #63737f;
+    color: #566573;
+}
+
+.project a:hover {
+    color: #eecc86;
 }
 
 .main-footer {
-    background-color: #63737f;
+    background-color: #394A59;
     padding-top: 15px;
     padding-bottom: 15px;
 }
