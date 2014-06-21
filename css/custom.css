@@ -4,7 +4,7 @@ body {
 }
 
 .lead {
-    color: #b8b8b8;
+    color: #f0f0f0;
 }
 
 a {
@@ -75,8 +75,87 @@ section h2 {
     border: 2px solid #b8b8b8;
 }
 
-footer {
+.project a {
+    color: #63737f;
+}
+
+.main-footer {
     background-color: #63737f;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+
+/* large modal view */
+@media (min-width: 992px) {
+
+    .modal article {
+        width: 521px;
+        float: left;
+        margin-bottom: 20px;
+        border-right: 1px solid #e5e5e5;
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+
+    .modal article:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .modal aside {
+        width: 317px;
+        float: right;
+    }
+
+}
+
+/* smaller modal view */
+@media (max-width: 992px) {
+
+    .modal article {
+        width: 500px;
+        margin: 0px auto 10px auto;
+        border-top: 1px solid #e5e5e5;
+        padding-top: 20px;
+    }
+
+    .modal article:first-child {
+        border: none;
+        padding-top: 0;
+    }
+
+    .modal aside {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 545px) {
+
+    .modal img {
+        display: block;
+        width: 258px;
+        margin: 0 auto;
+    }
+
+    .modal article {
+        width: 258px;
+        margin: 0 auto;
+    }
+}
+
+.modal {
+    color: #585858;    
+}
+
+.modal footer {
+    clear: both;
+}
+
+.modal-body {
+    overflow: auto;
 }

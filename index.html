@@ -69,9 +69,11 @@
                 </div>
                 <div class="row">
                     <div class="project col-xs-12 col-sm-6 col-md-4 text-center">
-                        <img src="/img/rain-sm.png" width="200" height="200" alt="RAIN Web Application" class="img-circle">
+                        <a href="rain.html" data-toggle="modal" data-target="#myModal">
+                            <img src="/img/rain-sm.png" width="200" height="200" alt="RAIN Web Application" class="img-circle">
+                        </a>
                         <h3><i class="fa fa-html5"></i> RAIN</h3>
-                        <p>A MEAN (MongoDB, Express, Angular, Node.js) web application for creating requests for information and displaying reports. Leverages socket.io for real-time updates.</p>
+                        <p>A MEAN (MongoDB, Express, Angular, Node.js) web application for creating requests for information and displaying reports. Leverages socket.io for real-time updates.</p><a href="rain.html" data-toggle="modal" data-target="#myModal">More Details about RAIN</a>
                     </div>
                     
                     <div class="project col-xs-12 col-sm-6 col-md-4 text-center">
@@ -113,9 +115,16 @@
             </div>
         </section>
         
-        <footer class="text-center">
+        <footer class="main-footer text-center">
             <p>Interested in learning more? <a href="mailto:dlineberger@gmail.com">Send me a message</a>.</p>
         </footer>
+        
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content"></div>
+            </div>
+        </div><!-- /.modal -->
+
         
         <script src="/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -128,6 +137,27 @@
                 if ($(window).width() >= 768) {
                     $('header').parallax("50%", 0.1);
                 }
+                
+                // resize and center modal
+                var setModalHeight = function() {
+                    var margin = $('.modal-dialog').outerHeight(true) - $('.modal-dialog').outerHeight();
+                    var headerHeight = 56;
+                    $('.modal-body').innerHeight(window.innerHeight - 2 - (margin + headerHeight));
+                }
+                
+                $("#myModal").on('show.bs.modal', function(e) {
+                    setModalHeight();
+                });
+                
+                $("#myModal").on('loaded.bs.modal', function(e) {
+                    setModalHeight();
+                });
+                
+                $(window).resize(function() {
+                    if ($('#myModal').is(':visible')) {
+                        setModalHeight();
+                    }
+                });
             });
             </script>
     </body>
