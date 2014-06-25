@@ -1,26 +1,27 @@
 body {
-    color: #D9D6D2;
+    color: #757575;
     font-family: "myriad-pro", sans-serif;
+    font-size: 1.6em;
 }
 
 a {
-    color: #eecc86;
+    color: #3d3d3d;
 }
 
 a:hover {
     text-decoration: none;
-    color: #eecc86;
+    color: #7EAED9;
 }
 
 header {
-    background: url('/img/header_bg.jpg') 50% 0 no-repeat fixed;
+    background: url('/img/mountains.jpg') 50% 0 no-repeat fixed;
     padding-bottom: 30px;
     height: 500px;
     position: relative;
 }
 
 header h1 {
-    color: #f0f0f0;
+    color: #566573;
     padding-top: 50px;
 }
 
@@ -42,18 +43,22 @@ header a:hover {
 }
 
 section {
-    padding-top: 30px;
     padding-bottom: 50px;
 }
 
 
 section h2 {
+    margin-top: 50px;
     padding-bottom: 30px;
 }
 
 
 .about-me {
-    background-color: #394A59;
+    background-color: #fff;
+}
+
+.about-me h2 {
+    color: #3d3d3d;
 }
 
 .about-me h2 small {
@@ -65,8 +70,15 @@ section h2 {
 }
 
 .projects {
-    color: #585858;
-    background-color: #f0f0f0;
+    color: #566573;
+    background: url('/img/old_mathematics_darker.png');
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+
+.projects .container {
+    background-color: rgba(255,255,255,0.7);
+    padding: 0 50px 50px 50px;
 }
 
 .project h3 {
@@ -81,20 +93,16 @@ section h2 {
     border: 1px solid #77848C;
 }
 
-.project a {
-    color: #566573;
-}
-
-.project a:hover {
-    color: #eecc86;
+.project a img:hover {
+    border: 1px solid #7EAED9;
+    opacity: 0.5;
 }
 
 .main-footer {
-    background-color: #394A59;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background-color: #DFE2EE;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-
 
 /* large modal view */
 @media (min-width: 992px) {
