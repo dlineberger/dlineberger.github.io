@@ -15,6 +15,7 @@ a:hover {
 
 header {
     background: url('/img/mountains.jpg') 50% 0 no-repeat fixed;
+    background-color: #6F9BD0;
     padding-bottom: 30px;
     height: 500px;
     position: relative;
@@ -102,6 +103,19 @@ section h2 {
     background-color: #DFE2EE;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+@media (min-width: 1281px) {
+    header {
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 /* large modal view */
