@@ -99,6 +99,10 @@ section h2 {
     opacity: 0.5;
 }
 
+.project a:hover h3 {
+	color: #7EAED9;
+}
+
 .main-footer {
     background-color: #DFE2EE;
     padding-top: 30px;
