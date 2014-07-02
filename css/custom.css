@@ -90,16 +90,36 @@ section h2 {
     padding-top: 40px;
 }
 
-.project img {
+.preview img {
+	transition: opacity 400ms;
     border: 1px solid #77848C;
+	margin: 0 auto;
+	opacity: 1;
 }
 
-.project a img:hover {
-    border: 1px solid #7EAED9;
+.preview:hover img {
     opacity: 0.5;
 }
 
-.project a:hover h3 {
+.preview {
+	position: relative;
+}
+
+.preview .fa-search {
+	transition: opacity 400ms;
+	position: absolute;
+	margin-left: -116px;
+	margin-top: 84px;
+	opacity: 0;
+	color: #fff;
+}
+
+.preview:hover .fa-search {
+	opacity: 0.7;
+}
+
+.preview:hover h3 {
+	transition: color 400ms;
 	color: #7EAED9;
 }
 
