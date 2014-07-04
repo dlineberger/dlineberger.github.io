@@ -99,14 +99,14 @@ section h2 {
 }
 
 .preview:hover img {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .preview {
 	position: relative;
 }
 
-.preview .fa-search {
+.preview .fa-2x {
 	transition: opacity 400ms;
 	position: absolute;
 	margin-left: -116px;
@@ -115,8 +115,12 @@ section h2 {
 	color: #fff;
 }
 
-.preview:hover .fa-search {
-	opacity: 0.7;
+.preview .fa-2x.fa-inverse {
+	color: #77848C;
+}
+
+.preview:hover .fa-2x {
+	opacity: 0.85;
 }
 
 .preview:hover h3 {
