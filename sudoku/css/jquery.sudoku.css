@@ -1,0 +1,82 @@
+.sudoku {
+  width: 384;
+  position: relative; }
+  .sudoku .board-block {
+    display: inline-block;
+    border: 1px solid black; }
+  .sudoku .board-cell {
+    float: left;
+    position: relative;
+    border: 1px solid #999999;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    outline: none; }
+    .sudoku .board-cell:nth-child(3n + 1) {
+      clear: left; }
+    .sudoku .board-cell.permanent:focus {
+      background-color: #efefef; }
+    .sudoku .board-cell.editable {
+      cursor: pointer;
+      color: #3680c7; }
+      .sudoku .board-cell.editable.selected {
+        background-color: #b3d4fd;
+        color: white; }
+      .sudoku .board-cell.editable.incorrect-value {
+        color: red; }
+      .sudoku .board-cell.editable:focus {
+        background-color: #b3d4fd;
+        color: white; }
+  .sudoku .number-popup {
+    background-color: white;
+    width: 128px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 3px 3px 3px #999999;
+    /* http://css-tricks.com/snippets/css/css-triangle */ }
+    .sudoku .number-popup .arrow {
+      z-index: 1;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent; }
+    .sudoku .number-popup.popup-direction-right {
+      left: 8px; }
+      .sudoku .number-popup.popup-direction-right .arrow {
+        left: 4px; }
+    .sudoku .number-popup.popup-direction-left {
+      right: 8px; }
+      .sudoku .number-popup.popup-direction-left .arrow {
+        right: 4px; }
+    .sudoku .number-popup.popup-direction-down {
+      top: 48px; }
+      .sudoku .number-popup.popup-direction-down .arrow {
+        top: -8px;
+        border-bottom: 8px solid #3680c7;
+        border-top: 0; }
+    .sudoku .number-popup.popup-direction-up {
+      bottom: 48px; }
+      .sudoku .number-popup.popup-direction-up .arrow {
+        bottom: -8px;
+        border-top: 8px solid #3680c7;
+        border-bottom: 0; }
+    .sudoku .number-popup .board-block {
+      border-color: #3680c7; }
+    .sudoku .number-popup .board-cell {
+      border-color: #3680c7;
+      color: #000;
+      cursor: pointer; }
+      .sudoku .number-popup .board-cell:hover {
+        background-color: #b3d4fd;
+        color: white; }
+
+@media only screen and (max-width: 383px) {
+  .sudoku {
+    width: 312px; }
+    .sudoku .number-popup {
+      width: 104px; }
+    .sudoku .board-cell {
+      width: 32px; } }

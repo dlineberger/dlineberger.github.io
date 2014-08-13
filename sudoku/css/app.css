@@ -1,0 +1,95 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  font-size: 1.0em; }
+
+header {
+  position: absolute;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #3680C7;
+  color: #fff; }
+  header .header-container {
+    margin: 0 auto;
+    height: 40px;
+    max-width: 600px;
+    padding: 5px; }
+    header .header-container img {
+      float: left; }
+  header .title {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 6px;
+    margin-left: 10px;
+    text-transform: uppercase; }
+  header ul {
+    float: right; }
+    header ul li {
+      display: inline-block;
+      margin-top: 3px; }
+
+.container {
+  margin-top: 40px;
+  padding-top: 20px; }
+
+.sudoku {
+  font-family: Georgia,serif;
+  margin: 0px auto; }
+
+button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 24px; }
+  button:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad; }
+  button:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+
+.modal {
+  display: none;
+  background-color: #efefef;
+  border: 1px solid #999;
+  border-radius: 8px;
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 30%;
+  top: 100px;
+  z-index: 1; }
+  .modal .modal-header {
+    position: relative;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #999; }
+    .modal .modal-header .close {
+      float: right;
+      margin-right: 20px;
+      cursor: pointer; }
+      .modal .modal-header .close:hover {
+        color: #999; }
+  .modal .modal-content {
+    padding: 20px;
+    text-align: center; }
+  .modal .modal-footer {
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-right: 8px; }
+    .modal .modal-footer button {
+      float: right;
+      margin-left: 5px; }
+
+@media only screen and (max-width: 383px) {
+  .modal {
+    width: 80%; } }
